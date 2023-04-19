@@ -7,15 +7,24 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-
+.navbar{
+    background-color: #1a1615;
+}
+.navbar a{
+    color: #f5f1ed;
+    font-weight: bold;
+}
+.nav-item a{
+    color: #f5f1ed;
+    font-weight: bold;
+}
 .logo{
     background-image: url(./img/logo.jpg);
     background-size: cover;
     height: 240px;
     width: 180px;
-    float: left;
     border: 4px solid #000;
     margin-top: 24px;
     margin-left: 20px;
@@ -26,89 +35,83 @@
     position: fixed;
     height: 50px;
     width: 50px;
-    margin-left: 96%;
+    margin-left: 88%;
     margin-top: 1%;
+}
+.whatsapp a:hover{
+    transform: scale(1.15);
+    transition: all 0.4s;
 }
 
 .barra{
     background-color: blue;
-    background-image: url(./img/banner22.png);
+    background-image: url(./img/banner.jpg);
     border: 5px solid #000;
     background-size: cover;
     height: 300px;
     width: auto;
 }
-
-.barra ul{
-    margin-top: 30px;
-    margin-left: 34.5%;
-    position: fixed;
+.galeria{
+    background-color: #4b4747;
 }
-.barra li{
-    height: 50px;
-    width: auto;
-    display: inline-block;
-    list-style: none;
-}
- 
-.barra a{
-    text-decoration: none;
-    background-color: #333;
+div .d-block{
+    height: 500px;
+    border-radius: 25px;
     border: 3px solid #000;
-    font-weight: bold;
+    margin: auto;
+    margin-top: 30px;
+}
+.carousel-control-prev span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid 2px;
+    box-shadow: 5px 5px 5px #000;
     padding: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: red;
+    margin-left: 150%;
 }
+.carousel-control-next span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid 2px;
+    box-shadow: 5px 5px 5px #000;
+    padding: 15px;
+    margin-right: 150%;
+}
+.galeria img{
+    object-position: center;
+    object-fit: cover;
+} 
 
-/* Color de botones seleccionados */
-.color1 a{
-  background-color: #6b6969;
-}
-.color2 a{
-  background-color: #6b6969;
-}
-.color3 a{
-  background-color: #6b6969;
-}
-.color4 a{
-  background-color: #6b6969;
-}
-.color5 a{
-  background-color: #6b6969;
-}
 /* INICIO HOME */
 .homeMain{
     background-color: #4b4747;
-    height: 800px;
+    height: auto;
     width: auto;
+}
+.imagenHome{
+    background-color: #fff;
+    background-image: url(./img/zingeria.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #000;
+    height: 600px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.homeText{
+    background-color: #2b2929;
+    border-radius: 25px;
+    border: 2px solid #fff;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
     color: #fff;
-}
-.imagenHome{
-    /* Placeholder de carrusel */
-    background-color: #fff;
-    background-image: url(./img/zingeria.jpg);
-    background-size: cover;
-    border: 3px solid #000;
-    height: 600px;
-    width: 800px;
-    margin: 100px 20px 40px 40px;
-    float: left;
-}
-.homeMain p{
-    background-color: #2b2929;
-    display: block;
-    height: 520px;
-    width: 650px;
-    margin-top: 120px;
-    margin-right: 250px;
+    margin: auto;
     padding: 20px;
-    border: 2px solid #fff;
-    float: right;
 }
-
 
 /* FIN HOME */
 /* INICIO PRODUCTOS */
@@ -405,52 +408,31 @@
 /* FIN NOSOTROS */
 
 /* INICIO FOOTER */
-footer{
+
+.footer{
+    background-color: #141413;
+}
+.footer a{
+    text-decoration: none;
+}
+.me-5{
+    font-weight: bold;
+    font-family: 'Rajdhani', sans-serif;
+}
+footer .footerCopyright{
     background-color: #333;
-    background-image: url(./img/footer.jpg);
-    background-size: cover;
-    background-position: left;
-    height: 200px;
-    width: auto;
-    border: 4px solid #000;
 }
-.logoFooter{
-    background-color: #fff;
-    background-image: url(./img/logo.jpg);
-    background-size: cover;
-    height: 160px;
-    width: 135px;
-    float: left;
-    margin: 20px 0px 20px 30px;
-    border: 3px solid #000;
-}
-.facebookIcon{
-    background-color: #ffffff00;
-    background-image: url(./img/facebookicon.png);
-    height: 50px;
-    width: 50px;
-    background-size: cover;
-    float: right;
-    margin-top: 10px;
-    padding: 5px;
-}
-.instaIcon{
-    background-image: url(./img/instaicon.png);
-    height: 50px;
-    width: 50px;
-    background-size: cover;
-    float: right;
-    margin-top: 10px;
-    padding: 5px;
-}
-.footerText{
-    background-color: #ffffff00;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    text-shadow: 0 0 10px #fff;
-    height: 160px;
-    width: 500px;
-    margin-left: 35%;
-    margin-top: 60px;
-}
+
 /* FIN FOOTER */
+
+@media only screen and (max-width: 768px){
+    div .d-block{
+        height: 300px;
+        margin: auto;
+        background-size: cover;
+    }
+    .galeria img{
+        object-position: center;
+        object-fit: cover;
+    } 
+}
