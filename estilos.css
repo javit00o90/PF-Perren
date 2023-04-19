@@ -9,15 +9,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Barra navegación y banner */
 .navbar{
-    background-color: #1a1615;
+    background-color: #1E1E24;
 }
 .navbar a{
-    color: #f5f1ed;
+    color: #F7EBE8;
     font-weight: bold;
 }
 .nav-item a{
-    color: #f5f1ed;
+    color: #F7EBE8;
     font-weight: bold;
 }
 .logo{
@@ -25,41 +27,35 @@
     background-size: cover;
     height: 240px;
     width: 180px;
-    border: 4px solid #000;
+    border: 4px solid #1E1E24;
     margin-top: 24px;
     margin-left: 20px;
 }
-.whatsapp a{
-    background-image: url(./img/wpp.png);
-    background-size: cover;
-    position: fixed;
-    height: 50px;
-    width: 50px;
-    margin-left: 88%;
-    margin-top: 1%;
-}
-.whatsapp a:hover{
-    transform: scale(1.15);
-    transition: all 0.4s;
-}
-
 .barra{
     background-color: blue;
     background-image: url(./img/banner.jpg);
-    border: 5px solid #000;
+    border: 2px solid #1E1E24;
     background-size: cover;
     height: 300px;
     width: auto;
 }
+/* Barra navegación y banner Fin*/
+
+/* Carousel Inicio */
 .galeria{
-    background-color: #4b4747;
+    background-color: #444140;
 }
-div .d-block{
+.d-block{
     height: 500px;
     border-radius: 25px;
-    border: 3px solid #000;
+    border: 2px solid #1E1E24;
     margin: auto;
     margin-top: 30px;
+}
+.carousel-indicators button{
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50%;
 }
 .carousel-control-prev span{
     height: 30px;
@@ -83,20 +79,21 @@ div .d-block{
     object-position: center;
     object-fit: cover;
 } 
+/* Carousel Fin */
 
 /* INICIO HOME */
 .homeMain{
-    background-color: #4b4747;
+    background-color: #444140;
     height: auto;
     width: auto;
 }
 .imagenHome{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/zingeria.jpg);
     border-radius: 25px;
     background-size: cover;
     background-position: center;
-    border: 3px solid #000;
+    border: 2px solid #000;
     height: 600px;
     margin: auto;
     margin-top: 40px;
@@ -105,305 +102,231 @@ div .d-block{
 .homeText{
     background-color: #2b2929;
     border-radius: 25px;
-    border: 2px solid #fff;
+    border: 2px solid #F7EBE8;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: #F7EBE8;
     margin: auto;
     padding: 20px;
 }
-
 /* FIN HOME */
-/* INICIO PRODUCTOS */
 
+/* INICIO PRODUCTOS */
 .productosMain{
-    background-color: #4b4747;
-    height: 800px;
+    background-color: #444140;
     width: auto;
     font-family: 'Rajdhani', sans-serif;
     font-size: 18px;
-    color: #fff;
-}
-.productosMain p{
-    margin-left: 10px;
-}
-.productosMain h3{
-    margin-left: 10px;
-    margin-top: 10px;
+    color: #F7EBE8;
 }
 
-.producto1{
+.prodText{
+    margin: auto;
+    margin-left: 10px;
+}
+.productos{
     background-color: #242323;
-    display: block;
-    height: 120px;
-    width: 600px;
-    border: 2px solid #000;
-    margin: 150px 0 20px 100px;
-    float: left;
-    
+    border: 2px solid #000;  
+    border-radius: 25px;
+    height: 150px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.productos:hover{
+    transform: scale(1.06);
+    transition: all 0.9s;
+    box-shadow: 5px 5px 5px #000;
 }
 .prologo1{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/Canaletas.jpg);
     background-size: cover;
     height: 100px;
     width: 100px;
-    margin: 10px 10px;
-    float: left;
-}
-.producto2{
-    background-color: #242323;
-    display: block;
-    height: 120px;
-    width: 600px;
-    border: 2px solid #000;
-    margin: 150px 100px 20px 0;
-    float: right;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .prologo2{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/Chapas.jpg);
     background-size: cover;
     height: 100px;
     width: 100px;
-    margin: 10px 10px;
-    float: right;
-}
-.producto3{
-    background-color: #242323;
-    display: block;
-    height: 120px;
-    width: 600px;
-    border: 2px solid #000;
-    margin: 20px 0 20px 100px;
-    float: left;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .prologo3{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/cenefas.jpg);
     background-size: cover;
     height: 100px;
     width: 100px;
-    margin: 10px 10px;
-    float: left;
-}
-.producto4{
-    background-color: #242323;
-    display: block;
-    height: 120px;
-    width: 600px;
-    border: 2px solid #000;
-    margin: 20px 100px 20px 0;
-    float: right;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .prologo4{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/babetas.jpg);
     background-size: cover;
     height: 100px;
     width: 100px;
-    margin: 10px 10px;
-    float: right;
-}
-.producto5{
-    background-color: #242323;
-    display: block;
-    height: 120px;
-    width: 600px;
-    border: 2px solid #000;
-    margin: 20px 0 20px 100px;
-    float: left;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .prologo5{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/perfiles.jpg);
     background-size: cover;
     height: 100px;
     width: 100px;
-    margin: 10px 10px;
-    float: left;
-}
-.producto6{
-    background-color: #242323;
-    display: block;
-    height: 120px;
-    width: 600px;
-    border: 2px solid #000;
-    margin: 20px 100px 20px 0;
-    float: right;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .prologo6{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/extractor.jpg);
     background-size: cover;
     height: 100px;
     width: 100px;
-    margin: 10px 10px;
-    float: right;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 /* FIN PRODUCTOS */
 
 /* INICIO SERVICIOS */
 .serviciosMain{
-    background-color: #4b4747;
-    height: 800px;
+    background-color: #444140;
     width: auto;
     font-family: 'Rajdhani', sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: #F7EBE8;
 }
-.serviciosMain h3{
-    margin-left: 10px;
-    margin-top: 10px;
-}
-.serviciosMain p{
-    margin-left: 10px;
+.servText{
+    margin: 10px auto auto 5px;
 }
 
-.servicio1{
+.servicio{
     background-color: #242323;
-    display: block;
-    height: 220px;
-    width: 700px;
-    border: 2px solid #000;
-    margin: 150px 0 20px 100px;
-    float: left;
-    
+    height: 200px;
+    border: 2px solid #1E1E24; 
+    margin: 15px auto 10px auto;
+    border-radius: 25px;
+}
+.servicio:hover{
+    transform: scale(1.06);
+    transition: all 0.9s;
+    box-shadow: 5px 5px 5px #000;
 }
 .servlogo1{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/instalacionzing.jpg);
     background-size: cover;
-    height: 200px;
-    width: 200px;
-    margin: 10px 10px;
-    float: left;
-}
-.servicio2{
-    background-color: #242323;
-    display: block;
-    height: 220px;
-    width: 700px;
-    border: 2px solid #000;
-    margin: 150px 100px 20px 0;
-    float: right;
+    border-radius: 25px;
+    height: 150px;
+    width: 150px;
+    margin: auto 0 auto 10px;
 }
 .servlogo2{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/limpiezatecho.jpg);
     background-size: cover;
-    height: 200px;
-    width: 200px;
-    margin: 10px 10px;
-    float: right;
-}
-.servicio3{
-    background-color: #242323;
-    display: block;
-    height: 220px;
-    width: 700px;
-    border: 2px solid #000;
-    margin: 20px 0 20px 100px;
-    float: left;
+    border-radius: 25px;
+    height: 150px;
+    width: 150px;
+    margin: auto 0 auto 10px;
 }
 .servlogo3{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/sellado.jpg);
     background-size: cover;
-    background-position: right;
-    height: 200px;
-    width: 200px;
-    margin: 10px 10px;
-    float: left;
-}
-.servicio4{
-    background-color: #242323;
-    display: block;
-    height: 220px;
-    width: 700px;
-    border: 2px solid #000;
-    margin: 20px 100px 20px 0;
-    float: right;
+    border-radius: 25px;
+    height: 150px;
+    width: 150px;
+    margin: auto 0 auto 10px;
 }
 .servlogo4{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/estructura.jpg);
     background-size: cover;
-    height: 200px;
-    width: 200px;
-    margin: 10px 10px;
-    float: right;
+    border-radius: 25px;
+    height: 150px;
+    width: 150px;
+    margin: auto 0 auto 10px;
 }
 /* FIN SERVICIOS */
 
 /* INICIO CONTACTO */
 .contactoMain{
-    background-color: #4b4747;
-    height: 800px;
+    background-color: #444140;
     width: auto;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: #F7EBE8;
 }
 .imagenContacto{
-    background-color: #fff;
+    background-color: #F7EBE8;
     background-image: url(./img/contactus.jpg);
     background-size: cover;
-    border: 5px solid #000;
-    height: 700px;
-    width: 700px;
-    margin-top: 50px;
-    margin-left: 80px;
-    float: left;
+    border: 2px solid #1E1E24;
+    border-radius: 25px;
+    height: 600px;
+    margin: 15px auto;
 }
 .contactoData{
     background-color: #272626;
-    border: 3px solid #999494;
-    height: 580px;
-    width: 700px;
-    margin-top: 80px;
-    margin-right: 170px;
+    border: 2px solid #999494;
+    border-radius: 25px;
     padding: 30px;
     padding-left: 50px;
-    float: right;
+    height: 600px;
+    margin: 15px auto;
+}
+.contextarea{
+    padding: 10px;
+}
+.textarea1{
+    height: 300px;
+    max-height: 300px;
+    width: 100%;
 }
 /* FIN CONTACTO */
 
 /* INICIO NOSOTROS */
 .nosotrosMain{
-    background-color: #4b4747;
-    height: 800px;
+    background-color: #444140;
     width: auto;
     font-family: Saphira;
     font-size: 18px;
-    color: #fff;
+    color: #F7EBE8;
 }
 .nosotrosTexto{
     background-color: #272626;
+    border-radius: 25px;
     height: auto;
     width: 80%;
-    margin-left: 10%;
-    margin-top: 20px;
+    margin: 20px auto 40px auto;
     padding: 20px;
-    float: left;
 
 }
 .nosotrosVideo{
-    border: 5px solid #000;
     height: 500px;
-    width: 700px;
-    margin-top: 50px;
-    margin-left: 80px;
-    float: left;
+    width: auto;
+    margin: 20px auto;
 }
 .nosotrosMap{
-    background-color: #272626;
-    border: 5px solid #000;
     height: 500px;
-    width: 700px;
-    margin-top: 50px;
-    margin-right: 80px;
-    float: right;
+    width: auto;
+    margin: 20px auto;
+}
+.responsiveframe{
+    max-width: 100%;
 }
 /* FIN NOSOTROS */
 
@@ -411,6 +334,9 @@ div .d-block{
 
 .footer{
     background-color: #141413;
+}
+.footerbar{
+    border: 2px solid #1E1E24;
 }
 .footer a{
     text-decoration: none;
@@ -429,6 +355,17 @@ footer .footerCopyright{
     div .d-block{
         height: 300px;
         margin: auto;
+        background-size: cover;
+    }
+    .galeria img{
+        object-position: center;
+        object-fit: cover;
+        margin-top: 30px;
+    } 
+}
+@media only screen and (max-width: 576px){
+    div .d-block{
+        height: 200px;
         background-size: cover;
     }
     .galeria img{
