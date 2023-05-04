@@ -1,0 +1,497 @@
+@import url('./animate/_animations.scss');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Bebas+Neue&family=Rajdhani:wght@500&display=swap');
+@font-face {
+    font-family: Saphira;
+    src: url(./font/Saphira.otf);
+}
+
+// Variables
+
+// Colores
+$color1: #1E1E24;
+$color2: #444140;
+$color3: #F7EBE8;
+$color4: #FFA987;
+$color5: #E54B4B;
+
+// Fuentes
+$fuente1: 'Barlow Condensed', sans-serif;
+$fuente2: 'Rajdhani', sans-serif;
+$fuente3: Saphira;
+
+// Variables FIN
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra navegación y banner */
+.navbar{
+    background-color: $color1;
+}
+.navbar a{
+    color: #F7EBE8;
+    font-weight: bold;
+}
+.nav-item a{
+    color: #F7EBE8;
+    font-weight: bold;
+}
+.logo{
+    background-image: url(./img/logo.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #000;
+    height: 240px;
+    width: 180px;
+    border: 4px solid $color1;
+    margin-top: 24px;
+    margin-left: 20px;
+}
+.nav-item a:hover{
+    color: $color5;
+}
+.navbar a:hover{
+    color: $color5;
+}
+
+.barra{
+    background-image: url(./img/banner22.png);
+    border: 2px solid $color1;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+}
+// Whatsapp logo
+.barra a{
+    display: block;
+    background-image: url(./img/wpplogo.png);
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 92%;
+    margin-top: 14%;
+}
+
+@keyframes shake {
+    10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+    transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+    transform: translate3d(4px, 0, 0);
+    }
+}
+
+.barra a:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+// Whatsapp logo FIN
+
+/* Barra navegación y banner Fin*/
+
+/* Carousel Inicio */
+.galeria{
+    // background-color: $color2;
+    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+}
+.d-block{
+    height: 500px;
+    border-radius: 25px;
+    border: 2px solid $color1;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: inset 0 0 10px #000;
+}
+.carousel-indicators button{
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50%;
+}
+.carousel-control-prev span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid 2px;
+    box-shadow: 5px 5px 5px #000;
+    padding: 15px;
+    margin-left: 150%;
+}
+.carousel-control-next span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid 2px;
+    box-shadow: 5px 5px 5px #000;
+    padding: 15px;
+    margin-right: 150%;
+}
+.galeria img{
+    object-position: center;
+    object-fit: cover;
+} 
+/* Carousel Fin */
+
+/* INICIO HOME */
+.homeMain{
+    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+    // background-color: $color2;
+    height: auto;
+    width: auto;
+}
+.imagenHome{
+    background-image: url(./img/zingeria.jpg);
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #000;
+    height: 600px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.homeText{
+    background-color: $color1;
+    border-radius: 25px;
+    border: 2px solid $color3;
+    font-family: $fuente1;
+    font-size: 18px;
+    color: $color3;
+    margin: auto;
+    padding: 20px;
+}
+
+.titlebar{
+    background-color: $color5;
+    color: $color3;
+    border: 2px solid $color1;
+}
+.titlebar h4{
+    margin: auto;
+    text-align: center;
+    text-shadow: $color1 1px 0 10px;
+    font-family: $fuente2;
+}
+
+// Inicio Galería
+.galeria{
+    width: 100%;
+    margin: auto;
+}
+.galeriaImg{
+    background-color: $color3;
+    background-size: cover;
+    background-position: center;
+    border: solid #000 1px;
+    height: 175px;
+    width: 275px;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.galeriaImg:hover{
+    transform: scale(1.06);
+    transition: all 0.9s;
+    box-shadow: 5px 5px 5px #000;
+}
+.galeria1{
+    background-image: url(./galeria/Galeria1.jpeg);
+}
+.galeria2{
+    background-image: url(./galeria/Galeria2.jpeg);
+}
+.galeria3{
+    background-image: url(./galeria/Galeria3.jpeg);
+}
+.galeria4{
+    background-image: url(./galeria/Galeria4.jpeg);
+}
+.galeria5{
+    background-image: url(./galeria/Galeria5.jpeg);
+}
+.galeria6{
+    background-image: url(./galeria/Galeria6.jpeg);
+}
+.galeria7{
+    background-image: url(./galeria/Galeria7.jpeg);
+}
+.galeria8{
+    background-image: url(./galeria/Galeria8.jpeg);
+}
+.galeria9{
+    background-image: url(./galeria/Galeria9.jpeg);
+}
+.galeria10{
+    background-image: url(./galeria/Galeria10.jpeg);
+}
+.galeria11{
+    background-image: url(./galeria/Galeria11.jpeg);
+}
+.galeria12{
+    background-image: url(./galeria/Galeria12.jpeg);
+}
+// Fin Galería
+
+/* FIN HOME */
+
+/* INICIO PRODUCTOS */
+.productosMain{
+    // background-color: $color2;
+    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+    width: auto;
+    font-family: $fuente2;
+    font-size: 18px;
+    color: $color3;
+}
+
+.prodText{
+    margin: auto;
+    margin-left: 10px;
+}
+.productos{
+    background-color: $color1;
+    border: 2px solid #000;  
+    border-radius: 25px;
+    height: 150px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.productos:hover{
+    transform: scale(1.06);
+    transition: all 0.9s;
+    box-shadow: 5px 5px 5px #000;
+}
+
+@mixin prologo{
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.prologo1{
+    background-image: url(./img/Canaletas.jpg);
+    @include prologo;
+}
+.prologo2{
+    background-image: url(./img/Chapas.jpg);
+    @include prologo;
+}
+.prologo3{
+    background-image: url(./img/cenefas.jpg);
+    @include prologo;
+}
+.prologo4{
+    background-image: url(./img/babetas.jpg);
+    @include prologo;
+}
+.prologo5{
+    background-image: url(./img/perfiles.jpg);
+    @include prologo;
+}
+.prologo6{
+    background-image: url(./img/extractor.jpg);
+    @include prologo;
+}
+/* FIN PRODUCTOS */
+
+/* INICIO SERVICIOS */
+.serviciosMain{
+    // background-color: $color2;
+    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+    width: auto;
+    font-family: $fuente2;
+    font-size: 18px;
+    color: $color3;
+}
+.servText{
+    margin: 10px auto auto 5px;
+}
+
+.servicio{
+    background-color: $color1;
+    height: 200px;
+    border: 2px solid $color1; 
+    margin: 15px auto 10px auto;
+    border-radius: 25px;
+}
+.servicio:hover{
+    transform: scale(1.06);
+    transition: all 0.9s;
+    box-shadow: 5px 5px 5px #000;
+}
+
+@mixin servlogo{
+    background-size: cover;
+    border-radius: 25px;
+    height: 150px;
+    width: 150px;
+    margin: auto 0 auto 10px;
+}
+.servlogo1{
+    background-image: url(./img/instalacionzing.jpg);
+    @include servlogo;
+}
+.servlogo2{
+    background-image: url(./img/limpiezatecho.jpg);
+    @include servlogo;
+}
+.servlogo3{
+    background-image: url(./img/sellado.jpg);
+    @include servlogo;
+}
+.servlogo4{
+    background-image: url(./img/estructura.jpg);
+    @include servlogo;
+}
+/* FIN SERVICIOS */
+
+/* INICIO CONTACTO */
+.contactoMain{
+    // background-color: $color2;
+    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+    width: auto;
+    font-family: $fuente1;
+    font-size: 18px;
+    color: $color3;
+}
+.imagenContacto{
+    background-image: url(./img/contactus.jpg);
+    background-size: cover;
+    border: 2px solid $color1;
+    border-radius: 25px;
+    height: 600px;
+    margin: 15px auto;
+}
+.contactoData{
+    background-color: $color1;
+    border: 2px solid $color3;
+    border-radius: 25px;
+    padding: 30px;
+    padding-left: 50px;
+    height: 600px;
+    margin: 15px auto;
+}
+.contextarea{
+    padding: 10px;
+}
+.textarea1{
+    height: 300px;
+    max-height: 300px;
+    width: 100%;
+}
+/* FIN CONTACTO */
+
+/* INICIO NOSOTROS */
+.nosotrosMain{
+    // background-color: $color2;
+    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+    width: auto;
+    font-family: $fuente3;
+    font-size: 18px;
+    color: $color3;
+}
+.nosotrosTexto{
+    background-color: $color1;
+    border-radius: 25px;
+    height: auto;
+    width: 80%;
+    margin: 20px auto 40px auto;
+    padding: 20px;
+
+}
+.nosotrosVideo{
+    height: 500px;
+    width: auto;
+    margin: 20px auto;
+}
+.nosotrosMap{
+    height: 500px;
+    width: auto;
+    margin: 20px auto;
+}
+.responsiveframe{
+    max-width: 100%;
+}
+/* FIN NOSOTROS */
+
+/* INICIO FOOTER */
+
+.footer{
+    background-color: $color1;
+}
+.footerProd a{
+    color: $color3;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.footerProd a:hover{
+    color: $color5;
+}
+
+.footerbar{
+    border: 2px solid $color1;
+    background-color: $color5;
+}
+.footer a{
+    text-decoration: none;
+}
+.me-5{
+    font-weight: bold;
+    font-family: $fuente2;
+}
+footer .footerCopyright{
+    background-color: $color2;
+}
+
+/* FIN FOOTER */
+
+@media only screen and (max-width: 768px){
+    div .d-block{
+        height: 300px;
+        margin: auto;
+        background-size: cover;
+    }
+    .galeria img{
+        object-position: center;
+        object-fit: cover;
+        margin-top: 30px;
+    } 
+    .barra a{
+        margin-left: 90%;
+        margin-top: 14%;
+    }
+}
+@media only screen and (max-width: 576px){
+    div .d-block{
+        height: 200px;
+        background-size: cover;
+    }
+    .galeria img{
+        object-position: center;
+        object-fit: cover;
+    } 
+    .barra a{
+        margin-left: 90%;
+        margin-top: 20%;
+        height: 30px;
+        width: 30px;
+    }
+}
