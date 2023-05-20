@@ -39,8 +39,9 @@ $fuente3: Saphira;
     color: #F7EBE8;
     font-weight: bold;
 }
+
 .logo{
-    background-image: url(./img/logo.jpg);
+    background-image: url(./img/logo2.jpg);
     background-size: cover;
     border-radius: 25px;
     box-shadow: 5px 5px 5px #000;
@@ -49,11 +50,15 @@ $fuente3: Saphira;
     border: 4px solid $color1;
     margin-top: 24px;
     margin-left: 20px;
+    margin-right: 80%;
 }
 .nav-item a:hover{
     color: $color5;
 }
 .navbar a:hover{
+    color: $color5;
+}
+.navbar-toggler{
     color: $color5;
 }
 
@@ -65,15 +70,19 @@ $fuente3: Saphira;
     width: auto;
 }
 // Whatsapp logo
-.barra a{
+.wppbutton{
+    margin: auto;
+}
+
+.wppbutton a{
     display: block;
     background-image: url(./img/wpplogo.png);
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     background-position: center;
     background-size: cover;
-    margin-left: 92%;
-    margin-top: 14%;
+    margin: auto;
+    margin-right: 15px;
 }
 
 @keyframes shake {
@@ -94,7 +103,7 @@ $fuente3: Saphira;
     }
 }
 
-.barra a:hover {
+.wppbutton a:hover {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
@@ -107,10 +116,10 @@ $fuente3: Saphira;
 /* Carousel Inicio */
 .galeria{
     // background-color: $color2;
-    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
 }
 .d-block{
-    height: 500px;
+    height: 600px;
     border-radius: 25px;
     border: 2px solid $color1;
     margin: auto;
@@ -140,7 +149,7 @@ $fuente3: Saphira;
     padding: 15px;
     margin-right: 150%;
 }
-.galeria img{
+.galeria video{
     object-position: center;
     object-fit: cover;
 } 
@@ -148,8 +157,12 @@ $fuente3: Saphira;
 
 /* INICIO HOME */
 .homeMain{
-    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
     // background-color: $color2;
+    background-image: url("./img/fondoweb.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: auto;
     width: auto;
 }
@@ -164,6 +177,7 @@ $fuente3: Saphira;
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
 .homeText{
     background-color: $color1;
     border-radius: 25px;
@@ -197,15 +211,17 @@ $fuente3: Saphira;
     background-size: cover;
     background-position: center;
     border: solid #000 1px;
-    height: 175px;
-    width: 275px;
+    height: 275px;
+    width: 475px;
     margin: auto;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
 }
 .galeriaImg:hover{
     transform: scale(1.06);
     transition: all 0.9s;
+    filter: grayscale(0%);
     box-shadow: 5px 5px 5px #000;
 }
 .galeria1{
@@ -251,8 +267,12 @@ $fuente3: Saphira;
 /* INICIO PRODUCTOS */
 .productosMain{
     // background-color: $color2;
-    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
     width: auto;
+    background-image: url("./img/fondoweb.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: $fuente2;
     font-size: 18px;
     color: $color3;
@@ -314,8 +334,12 @@ $fuente3: Saphira;
 /* INICIO SERVICIOS */
 .serviciosMain{
     // background-color: $color2;
-    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
     width: auto;
+    background-image: url("./img/fondoweb.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: $fuente2;
     font-size: 18px;
     color: $color3;
@@ -365,8 +389,12 @@ $fuente3: Saphira;
 /* INICIO CONTACTO */
 .contactoMain{
     // background-color: $color2;
-    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
     width: auto;
+    background-image: url("./img/fondoweb.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: $fuente1;
     font-size: 18px;
     color: $color3;
@@ -401,8 +429,12 @@ $fuente3: Saphira;
 /* INICIO NOSOTROS */
 .nosotrosMain{
     // background-color: $color2;
-    background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
+    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
     width: auto;
+    background-image: url("./img/fondoweb.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: $fuente3;
     font-size: 18px;
     color: $color3;
@@ -462,17 +494,26 @@ footer .footerCopyright{
 }
 
 /* FIN FOOTER */
+@media only screen and (max-width: 1024px){
+    .homeText{
+        margin-bottom: 10px;
+    }
+    div .d-block{
+        height: 400px;
+    }
+    .galeria video{
+        object-position: center;
+        object-fit: cover;
+    } 
+}
 
 @media only screen and (max-width: 768px){
     div .d-block{
         height: 300px;
-        margin: auto;
-        background-size: cover;
     }
-    .galeria img{
+    .galeria video{
         object-position: center;
         object-fit: cover;
-        margin-top: 30px;
     } 
     .barra a{
         margin-left: 90%;
@@ -482,9 +523,8 @@ footer .footerCopyright{
 @media only screen and (max-width: 576px){
     div .d-block{
         height: 200px;
-        background-size: cover;
     }
-    .galeria img{
+    .galeria video{
         object-position: center;
         object-fit: cover;
     } 
@@ -495,3 +535,4 @@ footer .footerCopyright{
         width: 30px;
     }
 }
+

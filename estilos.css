@@ -27,7 +27,7 @@
 }
 
 .logo {
-  background-image: url(./img/logo.jpg);
+  background-image: url(./img/logo2.jpg);
   background-size: cover;
   border-radius: 25px;
   box-shadow: 5px 5px 5px #000;
@@ -36,6 +36,7 @@
   border: 4px solid #1E1E24;
   margin-top: 24px;
   margin-left: 20px;
+  margin-right: 80%;
 }
 
 .nav-item a:hover {
@@ -43,6 +44,10 @@
 }
 
 .navbar a:hover {
+  color: #E54B4B;
+}
+
+.navbar-toggler {
   color: #E54B4B;
 }
 
@@ -54,15 +59,19 @@
   width: auto;
 }
 
-.barra a {
+.wppbutton {
+  margin: auto;
+}
+
+.wppbutton a {
   display: block;
   background-image: url(./img/wpplogo.png);
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   background-position: center;
   background-size: cover;
-  margin-left: 92%;
-  margin-top: 14%;
+  margin: auto;
+  margin-right: 15px;
 }
 
 @keyframes shake {
@@ -79,7 +88,7 @@
     transform: translate3d(4px, 0, 0);
   }
 }
-.barra a:hover {
+.wppbutton a:hover {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
@@ -88,12 +97,8 @@
 
 /* Barra navegación y banner Fin*/
 /* Carousel Inicio */
-.galeria {
-  background-image: linear-gradient(to right, #444140, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, #444140);
-}
-
 .d-block {
-  height: 500px;
+  height: 600px;
   border-radius: 25px;
   border: 2px solid #1E1E24;
   margin: auto;
@@ -127,7 +132,7 @@
   margin-right: 150%;
 }
 
-.galeria img {
+.galeria video {
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;
@@ -137,7 +142,10 @@
 /* Carousel Fin */
 /* INICIO HOME */
 .homeMain {
-  background-image: linear-gradient(to right, #444140, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, #444140);
+  background-image: url("./img/fondoweb.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   height: auto;
   width: auto;
 }
@@ -188,16 +196,18 @@
   background-size: cover;
   background-position: center;
   border: solid #000 1px;
-  height: 175px;
-  width: 275px;
+  height: 275px;
+  width: 475px;
   margin: auto;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  filter: grayscale(100%);
 }
 
 .galeriaImg:hover {
   transform: scale(1.06);
   transition: all 0.9s;
+  filter: grayscale(0%);
   box-shadow: 5px 5px 5px #000;
 }
 
@@ -252,8 +262,11 @@
 /* FIN HOME */
 /* INICIO PRODUCTOS */
 .productosMain {
-  background-image: linear-gradient(to right, #444140, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, #444140);
   width: auto;
+  background-image: url("./img/fondoweb.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: "Rajdhani", sans-serif;
   font-size: 18px;
   color: #F7EBE8;
@@ -343,8 +356,11 @@
 /* FIN PRODUCTOS */
 /* INICIO SERVICIOS */
 .serviciosMain {
-  background-image: linear-gradient(to right, #444140, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, #444140);
   width: auto;
+  background-image: url("./img/fondoweb.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: "Rajdhani", sans-serif;
   font-size: 18px;
   color: #F7EBE8;
@@ -407,8 +423,11 @@
 /* FIN SERVICIOS */
 /* INICIO CONTACTO */
 .contactoMain {
-  background-image: linear-gradient(to right, #444140, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, #444140);
   width: auto;
+  background-image: url("./img/fondoweb.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 18px;
   color: #F7EBE8;
@@ -446,8 +465,11 @@
 /* FIN CONTACTO */
 /* INICIO NOSOTROS */
 .nosotrosMain {
-  background-image: linear-gradient(to right, #444140, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, #444140);
   width: auto;
+  background-image: url("./img/fondoweb.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: Saphira;
   font-size: 18px;
   color: #F7EBE8;
@@ -513,18 +535,29 @@ footer .footerCopyright {
 }
 
 /* FIN FOOTER */
-@media only screen and (max-width: 768px) {
-  div .d-block {
-    height: 300px;
-    margin: auto;
-    background-size: cover;
+@media only screen and (max-width: 1024px) {
+  .homeText {
+    margin-bottom: 10px;
   }
-  .galeria img {
+  div .d-block {
+    height: 400px;
+  }
+  .galeria video {
     -o-object-position: center;
        object-position: center;
     -o-object-fit: cover;
        object-fit: cover;
-    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  div .d-block {
+    height: 300px;
+  }
+  .galeria video {
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .barra a {
     margin-left: 90%;
@@ -534,9 +567,8 @@ footer .footerCopyright {
 @media only screen and (max-width: 576px) {
   div .d-block {
     height: 200px;
-    background-size: cover;
   }
-  .galeria img {
+  .galeria video {
     -o-object-position: center;
        object-position: center;
     -o-object-fit: cover;
