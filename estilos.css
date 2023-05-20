@@ -173,6 +173,16 @@
   padding: 20px;
 }
 
+.homeText a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #F7EBE8;
+}
+
+.homeText a:hover {
+  color: #E54B4B;
+}
+
 .titlebar {
   background-color: #E54B4B;
   color: #F7EBE8;
@@ -353,6 +363,26 @@
   margin-right: 10px;
 }
 
+.prologo7 {
+  background-image: url(./img/cabriada.jpg);
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.prologo8 {
+  background-image: url(./img/hierros.jpg);
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 /* FIN PRODUCTOS */
 /* INICIO SERVICIOS */
 .serviciosMain {
@@ -420,6 +450,24 @@
   margin: auto 0 auto 10px;
 }
 
+.servlogo5 {
+  background-image: url(./img/chimenea.jpg);
+  background-size: cover;
+  border-radius: 25px;
+  height: 150px;
+  width: 150px;
+  margin: auto 0 auto 10px;
+}
+
+.servlogo6 {
+  background-image: url(./img/transporte.jpg);
+  background-size: cover;
+  border-radius: 25px;
+  height: 150px;
+  width: 150px;
+  margin: auto 0 auto 10px;
+}
+
 /* FIN SERVICIOS */
 /* INICIO CONTACTO */
 .contactoMain {
@@ -460,6 +508,21 @@
   height: 300px;
   max-height: 300px;
   width: 100%;
+}
+
+.contactoBoton {
+  background-color: #E54B4B;
+  border: none;
+  color: #F7EBE8;
+  padding: 5px;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+
+.contactoBoton:hover {
+  transform: scale(1.06);
+  transition: all 0.9s;
+  box-shadow: 3px 3px 3px #000;
 }
 
 /* FIN CONTACTO */
@@ -536,9 +599,6 @@ footer .footerCopyright {
 
 /* FIN FOOTER */
 @media only screen and (max-width: 1024px) {
-  .homeText {
-    margin-bottom: 10px;
-  }
   div .d-block {
     height: 400px;
   }
@@ -550,6 +610,9 @@ footer .footerCopyright {
   }
 }
 @media only screen and (max-width: 768px) {
+  .homeText {
+    margin-bottom: 10px;
+  }
   div .d-block {
     height: 300px;
   }

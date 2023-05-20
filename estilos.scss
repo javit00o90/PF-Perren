@@ -157,8 +157,6 @@ $fuente3: Saphira;
 
 /* INICIO HOME */
 .homeMain{
-    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
-    // background-color: $color2;
     background-image: url("./img/fondoweb.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -187,6 +185,14 @@ $fuente3: Saphira;
     color: $color3;
     margin: auto;
     padding: 20px;
+}
+.homeText a{
+    text-decoration: none;
+    font-weight: bold;
+    color: $color3;
+}
+.homeText a:hover{
+    color: $color5;
 }
 
 .titlebar{
@@ -329,6 +335,14 @@ $fuente3: Saphira;
     background-image: url(./img/extractor.jpg);
     @include prologo;
 }
+.prologo7{
+    background-image: url(./img/cabriada.jpg);
+    @include prologo;
+}
+.prologo8{
+    background-image: url(./img/hierros.jpg);
+    @include prologo;
+}
 /* FIN PRODUCTOS */
 
 /* INICIO SERVICIOS */
@@ -384,12 +398,18 @@ $fuente3: Saphira;
     background-image: url(./img/estructura.jpg);
     @include servlogo;
 }
+.servlogo5{
+    background-image: url(./img/chimenea.jpg);
+    @include servlogo;
+}
+.servlogo6{
+    background-image: url(./img/transporte.jpg);
+    @include servlogo;
+}
 /* FIN SERVICIOS */
 
 /* INICIO CONTACTO */
 .contactoMain{
-    // background-color: $color2;
-    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
     width: auto;
     background-image: url("./img/fondoweb.jpg");
     background-repeat: no-repeat;
@@ -424,12 +444,23 @@ $fuente3: Saphira;
     max-height: 300px;
     width: 100%;
 }
+.contactoBoton{
+    background-color: $color5;
+    border: none;
+    color: $color3;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 5px;
+}
+.contactoBoton:hover{
+    transform: scale(1.06);
+    transition: all 0.9s;
+    box-shadow: 3px 3px 3px #000;
+}
 /* FIN CONTACTO */
 
 /* INICIO NOSOTROS */
 .nosotrosMain{
-    // background-color: $color2;
-    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
     width: auto;
     background-image: url("./img/fondoweb.jpg");
     background-repeat: no-repeat;
@@ -495,9 +526,6 @@ footer .footerCopyright{
 
 /* FIN FOOTER */
 @media only screen and (max-width: 1024px){
-    .homeText{
-        margin-bottom: 10px;
-    }
     div .d-block{
         height: 400px;
     }
@@ -508,6 +536,9 @@ footer .footerCopyright{
 }
 
 @media only screen and (max-width: 768px){
+    .homeText{
+        margin-bottom: 10px;
+    }
     div .d-block{
         height: 300px;
     }
