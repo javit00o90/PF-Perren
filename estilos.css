@@ -311,6 +311,7 @@
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 15px;
 }
 
 .prologo2 {
@@ -321,6 +322,7 @@
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 15px;
 }
 
 .prologo3 {
@@ -331,6 +333,7 @@
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 15px;
 }
 
 .prologo4 {
@@ -341,6 +344,7 @@
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 15px;
 }
 
 .prologo5 {
@@ -351,6 +355,7 @@
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 15px;
 }
 
 .prologo6 {
@@ -361,6 +366,7 @@
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 15px;
 }
 
 .prologo7 {
@@ -371,6 +377,7 @@
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 15px;
 }
 
 .prologo8 {
@@ -381,6 +388,7 @@
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 15px;
 }
 
 /* FIN PRODUCTOS */
@@ -628,6 +636,86 @@ footer .footerCopyright {
   }
 }
 @media only screen and (max-width: 576px) {
+  .prologo1 {
+    height: 90px;
+    width: 90px;
+    margin: auto;
+  }
+  .prologo2 {
+    height: 90px;
+    width: 90px;
+    margin: auto;
+  }
+  .prologo3 {
+    height: 90px;
+    width: 90px;
+    margin: auto;
+  }
+  .prologo4 {
+    height: 90px;
+    width: 90px;
+    margin: auto;
+  }
+  .prologo5 {
+    height: 90px;
+    width: 90px;
+    margin: auto;
+  }
+  .prologo6 {
+    height: 90px;
+    width: 90px;
+    margin: auto;
+  }
+  .prologo7 {
+    height: 90px;
+    width: 90px;
+    margin: auto;
+  }
+  .prologo8 {
+    height: 90px;
+    width: 90px;
+    margin: auto;
+  }
+  .prodText {
+    font-size: 12px;
+  }
+  .servlogo1 {
+    height: 110px;
+    width: 110px;
+    margin: auto 0 auto 0px;
+  }
+  .servlogo2 {
+    height: 110px;
+    width: 110px;
+    margin: auto 0 auto 0px;
+  }
+  .servlogo3 {
+    height: 110px;
+    width: 110px;
+    margin: auto 0 auto 0px;
+  }
+  .servlogo4 {
+    height: 110px;
+    width: 110px;
+    margin: auto 0 auto 0px;
+  }
+  .servlogo5 {
+    height: 110px;
+    width: 110px;
+    margin: auto 0 auto 0px;
+  }
+  .servlogo6 {
+    height: 110px;
+    width: 110px;
+    margin: auto 0 auto 0px;
+  }
+  .serviciosMain h3 {
+    font-size: 20px !important;
+  }
+  .servText {
+    font-size: 15px;
+    margin: auto;
+  }
   div .d-block {
     height: 200px;
   }

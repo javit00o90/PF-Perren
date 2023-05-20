@@ -114,10 +114,7 @@ $fuente3: Saphira;
 /* Barra navegación y banner Fin*/
 
 /* Carousel Inicio */
-.galeria{
-    // background-color: $color2;
-    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
-}
+
 .d-block{
     height: 600px;
     border-radius: 25px;
@@ -272,8 +269,6 @@ $fuente3: Saphira;
 
 /* INICIO PRODUCTOS */
 .productosMain{
-    // background-color: $color2;
-    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
     width: auto;
     background-image: url("./img/fondoweb.jpg");
     background-repeat: no-repeat;
@@ -310,6 +305,7 @@ $fuente3: Saphira;
     margin: auto;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 15px;
 }
 .prologo1{
     background-image: url(./img/Canaletas.jpg);
@@ -347,8 +343,6 @@ $fuente3: Saphira;
 
 /* INICIO SERVICIOS */
 .serviciosMain{
-    // background-color: $color2;
-    // background-image: linear-gradient(to right, $color2, #3e3a3a, #383334, #312c2f, #29262a, #29262a, #29262a, #29262a, #312c2f, #383334, #3e3a3a, $color2);
     width: auto;
     background-image: url("./img/fondoweb.jpg");
     background-repeat: no-repeat;
@@ -552,6 +546,86 @@ footer .footerCopyright{
     }
 }
 @media only screen and (max-width: 576px){
+    .prologo1{
+        height: 90px;
+        width: 90px;
+        margin: auto;
+    }
+    .prologo2{
+        height: 90px;
+        width: 90px;
+        margin: auto;
+    }
+    .prologo3{
+        height: 90px;
+        width: 90px;
+        margin: auto;
+    }
+    .prologo4{
+        height: 90px;
+        width: 90px;
+        margin: auto;
+    }
+    .prologo5{
+        height: 90px;
+        width: 90px;
+        margin: auto;
+    }
+    .prologo6{
+        height: 90px;
+        width: 90px;
+        margin: auto;
+    }
+    .prologo7{
+        height: 90px;
+        width: 90px;
+        margin: auto;
+    }
+    .prologo8{
+        height: 90px;
+        width: 90px;
+        margin: auto;
+    }
+    .prodText{
+        font-size: 12px;
+    }
+    .servlogo1{
+        height: 110px;
+        width: 110px;
+        margin: auto 0 auto 0px;
+    }
+    .servlogo2{
+        height: 110px;
+        width: 110px;
+        margin: auto 0 auto 0px;
+    }
+    .servlogo3{
+        height: 110px;
+        width: 110px;
+        margin: auto 0 auto 0px;
+    }
+    .servlogo4{
+        height: 110px;
+        width: 110px;
+        margin: auto 0 auto 0px;
+    }
+    .servlogo5{
+        height: 110px;
+        width: 110px;
+        margin: auto 0 auto 0px;
+    }
+    .servlogo6{
+        height: 110px;
+        width: 110px;
+        margin: auto 0 auto 0px;
+    }
+    .serviciosMain h3{
+        font-size: 20px !important;
+    }
+    .servText{
+        font-size: 15px;
+        margin: auto;
+    }
     div .d-block{
         height: 200px;
     }
